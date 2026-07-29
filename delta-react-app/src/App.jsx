@@ -1,10 +1,11 @@
 // import './App.css'
-import UseEffectDemo from './UseEffectDemo'
+
+import Counter from './counter'
 function App() {
 
   return (
     <>
-    
+    <counter/>
     </>
   )
 }
