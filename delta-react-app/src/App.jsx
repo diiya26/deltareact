@@ -1,19 +1,19 @@
-// import './App.css'
+import Thumbnail from "./Thumbnail";
+import LikeButton from "./LikeButton";
 
-//import Counter from './counter';
-//import Demo from "./Demo" ;
-//import Students from "./Students";
-//import Calculator from "./Calculator";
-import ShowHide from "./ShowHide";
+function Video({ video }) {
+    return (
+        <div>
+            <Thumbnail video={video} />
 
-function App() {
+            <a href={video.url}>
+                <h3>{video.title}</h3>
+                <p>{video.description}</p>
+            </a>
 
-  return (
-    <>
-
-    <ShowHide name = "diya"/>
-    </>
-  )
+            <LikeButton video={video} />
+        </div>
+    );
 }
 
-export default App;
+export default Video;
