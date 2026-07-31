@@ -1,18 +1,16 @@
 // import './App.css'
 
-import Counter from '.components/counter'
-import Demo from "./components/Demo" 
-import Students from "./components/Students"
-import Calculator from "./components/Calculator"
-import ShowHide from "./components/ShowHide"
+//import Counter from './counter';
+//import Demo from "./Demo" ;
+//import Students from "./Students";
+//import Calculator from "./Calculator";
+import ShowHide from "./ShowHide";
 
 function App() {
 
   return (
     <>
-    <counter/>
-    <demo/>
-    <Students/>
+
     <ShowHide name = "diya"/>
     </>
   )
