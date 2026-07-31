@@ -3,7 +3,8 @@
 import Counter from '.components/counter'
 import Demo from "./components/Demo" 
 import Students from "./components/Students"
-import Calculator from"./components/Calculator"
+import Calculator from "./components/Calculator"
+import ShowHide from "./components/ShowHide"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <counter/>
     <demo/>
     <Students/>
+    <ShowHide name = "diya"/>
     </>
   )
 }
