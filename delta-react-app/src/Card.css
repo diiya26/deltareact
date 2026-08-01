@@ -1,15 +1,44 @@
-.card {
-    width: 300px;
-    border: 2pxsolid#4caf50;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #f9fff9;
-    box-shadow: 2px2px10pxrgba(0,0,0,0.2);
-    margin: 20px;
+.faculty-card {
+    width: 320px;
+    margin: 30pxauto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 05px15pxrgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: 0.3s;
     text-align: center;
 }
 
-.cardh2 {
-    text-align: center;
-    color: #2e7d32;
+.faculty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 08px20pxrgba(0, 0, 0, 0.25);
 }
+.faculty-image {
+    background: #0d6efd;
+    padding: 25px0;
+}
+.faculty-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4pxsolid#ffffff;
+    object-fit: cover;
+}
+.faculty-details {
+    padding: 20px;
+}
+.faculty-details h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.faculty-details p {
+    margin: 10px0;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+.faculty-details strong {
+    color: #222;
+}
+    
