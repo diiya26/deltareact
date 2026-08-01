@@ -1,19 +1,23 @@
-import Thumbnail from "./Thumbnail";
-import LikeButton from "./LikeButton";
+import { createContext } from "react";
+import profile from "./assets/profile.png";
+import College from "./College";
+export const FacultyContext=createContext();
 
-function Video({ video }) {
-    return (
-        <div>
-            <Thumbnail video={video} />
+function App() {
 
-            <a href={video.url}>
-                <h3>{video.title}</h3>
-                <p>{video.description}</p>
-            </a>
-
-            <LikeButton video={video} />
-        </div>
-    );
+   constfacultyInfo= {
+    "name":"Raj Mehta",
+    "email":"raj@gmail.com",
+    "contactno":"+91-123456789",
+    "image":profile
+  }
+  return (
+    <>
+    <FacultyContext.Provider value={facultyInfo}>
+    <College/>
+    </FacultyContext.Provider>
+    </>
+  )
 }
 
-export default Video;
+export default App;
