@@ -1,22 +1,20 @@
 import { createContext } from "react";
-import profile from "./assets/profile.png";
-import College from "./College";
-export const FacultyContext=createContext();
+import reactLogo from'./assets/react.svg'
+import viteLogo from'./assets/vite.svg'
+import heroImg from'./assets/hero.png'
+import'./App.css'
+import Home from'./components/Home'
 
-function App() {
-
-   constfacultyInfo= {
-    "name":"Raj Mehta",
-    "email":"raj@gmail.com",
-    "contactno":"+91-123456789",
-    "image":profile
-  }
-  return (
+exportconstUserContext=createContext();
+functionApp() {
+    return (
     <>
-    <FacultyContext.Provider value={facultyInfo}>
-    <College/>
-    </FacultyContext.Provider>
-    </>
+    <div>
+     <UserContext.Provider value="Raj Mehta">
+      <Home/>
+     </UserContext.Provider>
+    </div>
+   </>
   )
 }
 
