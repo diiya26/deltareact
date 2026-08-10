@@ -1,8 +1,9 @@
-import MsgBox from "./assets/Component/MsgBox";
+import Profile from "./assets/Component/Profile";
+
 function App() {
     return (
     <>
-    <MsgBox username/>
+    <Profile/>
    </>
   )
 }
