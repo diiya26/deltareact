@@ -1,7 +1,34 @@
 import dia from "../dia.jpg";
-function Profile(){
-    return(
-        <img src = {dia} alt="Person"/>
+
+export default function Profile() {
+    return (
+        <Card>
+            <Avatar
+                size={100}
+                person={{
+                    name: "Diya Prajapati"
+                }}
+            />
+        </Card>
     );
 }
-export default Profile;
+
+function Avatar({ person, size }) {
+    return (
+        <img
+            className="avatar"
+            src={dia}
+            alt={person.name}
+            width={size}
+            height={size}
+        />
+    );
+}
+
+function Card({ children }) {
+    return (
+        <div className="card">
+            {children}
+        </div>
+    );
+}
