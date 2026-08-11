@@ -1,9 +1,10 @@
-import Profile from "./assets/Component/Profile";
+//import Profile from "./assets/Component/Profile";
+import Form from "./assets/Component/Form";
 
 function App() {
     return (
     <>
-    <Profile/>
+    <Form/>
    </>
   )
 }
